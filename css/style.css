@@ -1,0 +1,124 @@
+/* Definição das fontes utilizadas no projeto */
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(../Fontes/Unbounded-VariableFont_wght.ttf) 
+    format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fontes/Poppins-Regular.ttf) 
+    format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo desktop */
+body {
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+header img {
+    display: block;
+    margin: 75px 0 0 360px;
+}
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    margin-top: 60px;
+}
+h1 span {
+    color: #9747FF;
+}
+
+p  {
+    text-align: center;
+    font-size: 24px;
+    font-family: "poppins", sans-serif;
+    font-weight: normal;
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: "poppins", sans-serif;
+    font-weight: normal;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    width: 742px;
+    height: 446px;
+}
+
+@media(max-width: 768px){
+
+    header img{
+        margin: 65px 0 0 60px;
+    }
+    p{
+        width: 648px;
+    }
+}
+
+@media(max-width: 376px){
+    header img {
+        margin: 32px 0 0 16px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p{
+        width: 340px;
+        font-size: 20px;
+    }
+    a{
+        width: 251px;
+        height: 66px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+    section img {
+        width: 341px;
+        height: 230px;
+    }
+}
+/*h1, p, a {
+    color: #FFFFFF;
+}
+
+span {
+    color: #8233E8;
+}
+
+.white-color {
+    color: #FFFFFF;
+}*/
