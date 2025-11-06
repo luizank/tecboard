@@ -25,7 +25,7 @@
 
 /*Estilo desktop */
 body {
-    background-color: #000000;
+    background-color: #0E1014;
     color: #FFFFFF;
 }
 header img {
@@ -34,7 +34,7 @@ header img {
 }
 h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 64px;
     font-family: "Unbounded", sans-serif;
     font-weight: bold;
     margin-top: 60px;
@@ -72,11 +72,36 @@ a:hover {
     background-color: #8233E8;
 }
 
+div {
+    text-align: center;
+    margin: 40px auto 0;
+}
 section img {
     display: block;
     margin: 0 auto;
     width: 742px;
     height: 446px;
+}
+
+.zoom {
+  overflow: hidden;           /* esconde partes que saem do contêiner */
+  width: 700px;               /* ajuste conforme precisar */
+  height: 400px;
+  border-radius: 8px;
+}
+
+.zoom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* mantém proporção e corta o excesso */
+  transition: transform 300ms ease;
+  will-change: transform;     /* dica para melhor performance */
+  transform-origin: center;   /* ponto de zoom (center, top left, etc.) */
+}
+
+.zoom:hover img,
+.zoom:focus-within img {     /* inclui navegação por teclado */
+  transform: scale(1.2);     /* tamanho do zoom */
 }
 
 @media(max-width: 768px){
